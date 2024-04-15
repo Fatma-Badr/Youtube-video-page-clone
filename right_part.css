@@ -1,0 +1,208 @@
+#recommended_videos_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#recommended_videos_first_option, #recommended_videos_third_option{
+    padding: 8px 12px;
+    background-color: rgb(234, 232, 232) ;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-right: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#recommended_videos_second_option{
+    padding: 8px 12px;
+    background-color: black;
+    color:white;
+    white-space: nowrap;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-right: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#recommended_videos_third_option{
+    white-space: nowrap;
+}
+#recommended_videos_first_option:hover, #recommended_videos_third_option:hover{
+    background-color: rgb(209, 207, 207) ;
+} 
+#recommended_videos_expand_icon_container{
+    padding:6px 7px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#recommended_videos_expand_icon_container:hover{
+    border-radius: 50%;
+    background-color: rgb(209, 207, 207) ;
+}
+#recommended_videos_expand_icon{
+    width: 25px;
+    rotate: 270deg;
+}
+.recommended_video_element_channel_icon{
+    width: 10px;
+    margin-left: 4px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.recommended_video_element_img{
+    width: 168px;
+    height: 94px;
+    border-radius: 7px;
+}
+.recommended_video_element{
+    display: flex;
+    margin-top: 7px;
+    position: relative;
+    text-decoration: none;
+}
+.recommended_video_element:link, .recommended_video_element:visited{
+    color:black
+}
+.recommended_video_element_img_container{
+    margin-right: 7px;
+    position: relative;
+    cursor: pointer;
+}
+.recommended_video_element_duration{
+    position: absolute;
+    bottom: 7px;
+    right:5px;
+    color:white;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2px 4px 2px 3px;
+    border-radius: 4px;
+}
+.recommended_video_element_title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    width: 202px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.recommended_video_element_title_tooltip{
+    position: absolute;
+    top: 20px;
+    right:-110px;
+    font-size: 11px;
+    border: 1px solid black;
+    padding: 4px;
+    visibility: hidden;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    background-color: white;
+    white-space: nowrap;
+    z-index: 1;
+}
+.recommended_video_element_title:hover .recommended_video_element_title_tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+.recommended_video_element_channel_name, .recommended_video_element_view_part{
+    font-size: 12px;
+    color:rgb(62, 62, 62);
+    margin-top: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.recommended_video_element_options{
+    position: absolute;
+    top:0;
+    right:-14px;
+    width:18px;
+    opacity: 0;
+    cursor: pointer;
+}
+.recommended_video_element:hover .recommended_video_element_options{
+    opacity: 1;
+}
+.watch_later_icon, .add_to_queue_icon{
+    width: 25px;
+}
+.watch_later_container, .add_to_queue_container{
+    background-color: black;
+    opacity: 0;
+    padding: 2px;
+    border-radius: 4px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.watch_later_container{
+    right:5px;
+    top:3px;
+}
+.add_to_queue_container{
+    right: 5px;
+    top:38px;
+}
+.recommended_video_element:hover .watch_later_container, .recommended_video_element:hover .add_to_queue_container{
+    opacity: 0.9;
+}
+.watch_later_icon_tooltip{
+    top:-2px;
+    right:35px;
+    background-color: black;
+}
+.add_to_queue_icon_tooltip{
+    top:-2px;
+    right:35px;
+    background-color: black;
+}
+.watch_later_icon_tooltip, .add_to_queue_icon_tooltip{
+    padding: 7px 5px;
+}
+.watch_later_container:hover .watch_later_icon_tooltip, .add_to_queue_container:hover .add_to_queue_icon_tooltip{
+    opacity: 0.9;
+}
+.recommended_video_channel_name_tooltip, .recommended_video_channel_music_icon_tooltip, .watch_later_icon_tooltip, .add_to_queue_icon_tooltip{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 300;
+    color:white;
+    padding: 10px 7px 10px 7px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.recommended_video_channel_music_icon_tooltip{
+    left:-60px;
+    top:-55px;
+    background-color: rgb(65, 65, 65);
+}
+.recommended_video_channel_name_tooltip{
+    left:-8px;
+    top:-58px;
+    background-color: rgb(65, 65, 65);
+}
+.recommended_video_element_channel_name:hover .recommended_video_channel_name_tooltip, .recommended_video_element_channel_icon_container:hover .recommended_video_channel_music_icon_tooltip{
+    opacity: 0.85;
+}
+.recommended_video_element_channel_name_icon{
+    display: flex;
+    align-items: center;
+}
+.recommended_video_element_channel_icon_container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+#recommended_video_img_cover{
+    object-fit: cover;
+}

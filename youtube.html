@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Youtube
+        </title>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="right_part.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <script>
+            function search_fn(){
+                document.getElementById('search_icon_container_before').style.opacity = 1;
+                document.getElementById('search_bar').style.borderBottomLeftRadius = 0;
+                document.getElementById('search_bar').style.borderTopLeftRadius = 0;
+                document.getElementById('search_icon_container_before').style.borderRight= 'none';
+            };
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="left_pt">
+                <div id="menu_contianier">
+                    <img src="icons/menu.svg" id="menu">
+                </div>
+                <div id="logo_contianer">
+                    <img src="icons/youtube-logo.svg" id="logo">
+                    <div id="logo_tooltip">YouTube Home</div>
+                </div>
+            </div>
+            <div id="middle_pt">
+                <div id="search_bar_container">                    
+                    <input type="text" placeholder="Search" id="search_bar" > 
+                    <img src="icons/search.svg" id="search_icon_before">
+                    <div id="search_icon_container">
+                        <img src="icons/search.svg" id="search_icon">
+                        <div id="search_icon_tooltip">Search</div>
+                    </div>                   
+                </div>
+                
+                <div id="search_voice_container">
+                    <img src="icons/voice-search-icon.svg" id="search_voice">
+                    <div id="search_voice_tooltip">Search with your voice</div>
+                </div>
+            </div>
+            <div id="right_pt">
+                <div id="upload_container">
+                    <img src="icons/upload.svg" id="upload">
+                    <div id="upload_tooltip">Create</div>
+                </div>
+                <div id="notifications_container">
+                    <img src="icons/notifications.svg" id="notifications">
+                    <div id="not_no">9+</div>
+                    <div id="notifications_tooltip">Notifications</div>
+                </div>
+                <div id="account_container">
+                    F
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="playing_video_section">
+                <div id="playing_video">
+                    <img src="playing_video.PNG" id="playing_video_img">
+                    <div id="bottom_section">
+                        <div id="video_duration">
+                            <div id="video_duration_line_red"></div>
+                            <div id="video_duration_pointer"></div>
+                            <div id="video_duration_line_gray"></div>
+                        </div>                        
+                        <div id="left_icons">
+                            <div id="play_icon_div">
+                                <div id="play_icon_tooltip">Play (K) </div>
+                                <img src="icons/play2.png" id="play_icon">                        
+                            </div>  
+                            <div id="play_next_icon_div">
+                                <div id="play_next_video">
+                                    <p id="play_next_video_p1">NEXT (SHIFT+N)</p>
+                                    <P id="play_next_video_p2">ThePianoGuys</P>
+                                    <p id="play_next_video_p3">Greatest Hits</p>
+                                    <img src="playing_next.png" id="playing_next_img">
+                                </div>
+                                <img src="icons/play_next2.png" id="play_next_icon">
+                            </div>  
+                            <div id="sound_icon_div">
+                                <div id="sound_icon_tooltip">Mute (m)</div>
+                                <img src="icons/sound2.png" id="sound_icon">
+                                <div id="sound_volume"></div>
+                                <div id="sound_volume_pointer"></div>
+                            </div>
+                            <div id="video_duration_timer"> 0:18 / 5:58</div>
+                        </div>
+                        <div id="right_icons">
+                            <div id="toggle_icon_div">
+                                <div id="toggle_icon_tooltip">Autoplay is off</div>
+                                <img src="icons/toggle2.png" id="toggle_icon">
+                            </div>
+                            <div id="caption_icon_div">
+                                <div id="caption_icon_tooltip">Subtitles/closed captions unavailable</div>
+                                <img src="icons/caption2.png" id="caption_icon">
+                            </div>
+                            <div id="settings_icon_div">
+                                <div id="settings_icon_tooltip">Settings</div>
+                                <img src="icons/setting2.png" id="settings_icon">
+                            </div>
+                            <div id="miniplayer_icon_div">
+                                <div id="miniplayer_icon_tooltip">Miniplayer (i)</div>
+                                <img src="icons/miniplayer2.png" id="miniplayer_icon">
+                            </div>
+                            <div id="theater_mode_icon_div">
+                                <div id="theater_mode_icon_tooltip">Theater mode (t)</div>
+                                <img src="icons/theater_mode2.png" id="theater_mode_icon">
+                            </div>
+                            <div id="full_screen_icon_div">
+                                <div id="full_screen_icon_tooltip">Full screen (f)</div>
+                                <img src="icons/fullscreen2.png" id="full_screen_icon">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div id="playing_video_title">
+                    Titanium / Pavane (Piano/Cello Cover) - David Guetta / Faure - The Piano Guys
+                </div>
+                <div id="playing_video_below_section">
+                    <div id="playing_video_channel">
+                        <img id="playing_video_channel_img" src="https://yt3.googleusercontent.com/e8iX3Qcv_hJO1Rd1l7-BnFcCgLeV7cfSMeD9SvKH7laemC0BrFWQRV8uhBynSUOfxIE9mSOnQaA=s176-c-k-c0x00ffffff-no-rj">
+                        <div id="playing_video_channel_right">
+                            <div id="playing_video_channel_name">
+                                <div id="playing_video_channel_name_left">
+                                    <div id="playing_video_channel_name_tooltip">The Piano Guys</div>
+                                    The Piano Guys
+                                </div>
+                                <div id="playing_video_channel_name_right">
+                                    <div id="playing_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                    <img id="playing_video_channel_music_icon" src="icons/music.png">
+                                </div>                                
+                            </div>
+                            <div id="playing_video_channel_subscribers">
+                                7.09M subscribers
+                            </div>
+                        </div>                        
+                    </div>
+                    <div id="subscribed_button_div">
+                        <button id="subscribed_button">
+                            <img src="icons/notifications.svg" id="subscribed_button_icon">
+                            Subscribed 
+                            <img src="icons/expand_more.png" id="subscribed_button_expand_icon">
+                        </button>
+                    </div>
+                    <div id="like_button_div">
+                        <button id="like_button">
+                            <img src="icons/like.png" id="like_button_icon">
+                            898K 
+                        </button>
+                        <div id="like_dislike_line"></div>
+                        <button id="dislike_button">
+                            <img src="icons/dont-like.png" id="dislike_button_icon">
+                        </button>
+                    </div>
+                    <button id="share_button">
+                        <img src="icons/share.png" id="share_button_icon">
+                        Share
+                    </button>
+                    <button id="download_button">
+                        <img src="icons/download.png" id="download_button_icon">
+                        Download
+                    </button>
+                    <button id="options_button">
+                        <img src="icons/dots.png" id="options_icon">
+                    </button>
+                </div>
+                <div id="description_section">
+                    <div id="des_first_line">
+                        <span id="playing_video_views">133M views  11 years ago</span>  <span id="channel_tag">#pianocello #thepianoguys</span> <br>
+                        <div id="des_tooltip">133,585,963 views &#8226; Oct 4, 2012 &#8226; #pianocello #thepianoguys</div>
+                    </div>
+                    If you love classical music as much as we do, check out Apple Music Classical here: 
+                    <a href="https://apple.co/ThePianoGuys" target="_blank" id="channel_des_link">https://apple.co/ThePianoGuys</a>. 
+                    You can get 1 month for free if you are new to Apple Music!<br>
+                    <span id="des_more">....more</span>
+                </div>
+                <div id="shop_section">
+                    <div id="shop_first_line">
+                        Shop the The Piano Guys store 
+                        <img src="icons/dots.png" id="shop_options">
+                    </div>
+                    <div id="shop_rest">
+                        <a class="shop_element"  target="_blank" href="https://www.merchbar.com/pop/piano-guys/piano-guys-live-cd?ucc=NL&ucl=NL&srsltid=AfmBOopByrT7X0ZToAzVK4yFMFQJh2Co1u7P6jsB9zLH4b3qrfmCuZwAr54&utm_term=UCmKurapML4BF9Bjtj4RbvXw&utm_medium=product_shelf&utm_source=youtube&utm_content=YT-ANKptbCuks3kmBbHrMJ4_Bmt7eEgfSnTsJqVYujdUf-QOfBZwPOX7eK4jIDGiH0aJk8PwKoPQjIlQ2RYBrvQHoIN20yQYWnkq_-MTEQ6K7YPtE8ArXbnh54xNBVLoa-L5c0N3UuoTbqJlVeQKGRz_RRA59aZUWVlQNqV1cpGWnveIx5bmYAOJ_Uz">
+                            <div class="shop_element_img_div">
+                                <img class="shop_element_img" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSF_8K3_EhSKM9l2SRVegLfMRGYOdO8HEzlkUbrcnxAssh46xtd0mN_Pu2IxYEVJAzl3JEzPN7e">                            
+                            </div>
+                            <div class="shop_element_right">
+                                <div class="shop_element_name">The Piano Guys LIVE CD</div>
+                                <div class="shop_element_details">Limited shipping areas</div>
+                                <div class="shop_element_link_section">
+                                    Merchbar
+                                    <img src="icons/open_in_new.png" class="shop_icon">
+                                </div>
+                            </div>
+                        </a>
+                        <a class="shop_element" target="_blank" href="https://www.merchbar.com/pop/piano-guys/piano-guys-uncharted-cd?ucc=US&srsltid=AfmBOorLLDtihihjmGtg6aZzlYuGqz8E5Oaqvsm-OfnrnLIzuaCkNrJSFMs&utm_term=UCmKurapML4BF9Bjtj4RbvXw&utm_medium=product_shelf&utm_source=youtube&utm_content=YT-ANKptbD14G0NrunNX4NruVs_8Qjok3yiTQlvNS9yCeDCwIdRE6NLQVntkC8PdSv83AnxXoGYaHrJ4JRTB4gevr-Vi1yMOPsHjtwP8YBRfOGr58hAILBPL-gwch5BJAX2gA08gdOnmZxxEk4Ms7ZETwg0WeBSxXx9Lgd8j9wQ7NeyTEqvtyAKUVwj">
+                            <div class="shop_element_img_div">
+                                <img class="shop_element_img" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQz9hkChepWqLe7wQoAbLAAHWEQTVnzGG1SJExPud5xq76l-pACltfDDTDsbCmisFv1q2PrkHU">                            
+                            </div>
+                            <div class="shop_element_right">
+                                <div class="shop_element_name">The Piano Guys UNCHART...</div>
+                                <div class="shop_element_details">Limited shipping areas</div>
+                                <div class="shop_element_link_section">
+                                    Merchbar
+                                    <img src="icons/open_in_new.png" class="shop_icon">
+                                </div>
+                            </div>
+                        </a>
+                        <a class="shop_element" target="_blank" href="https://www.merchbar.com/pop/piano-guys/the-piano-guys-2-cd?ucc=US&srsltid=AfmBOooh95clPlLfaB3ZPFCzCUUt681pcU9SXFG8jQn7EB4hR2NiD7mkjL8&utm_term=UCmKurapML4BF9Bjtj4RbvXw&utm_medium=product_shelf&utm_source=youtube&utm_content=YT-ANKptbDaYRcURSJa0VtPViLfsih2i4X2pL68WRQT-jhJuhQLY0A5adDgMaJKkOlZbxX8kNYdbkyjPGDPZlg0lJDgyJGcedOnUur2XtKhE8IHsewF1_N2TzGH3P_pv736jSFAzyyr4QPvvnSDKG-1tLiiiNE8NwXv7JQ_7gdHwkoODSTgR3xzeG3t">
+                            <div class="shop_element_img_div">
+                                <img class="shop_element_img" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRFwMsqgLn6lzYlzf5izYbr_XMfjUZPzMu8i8nt66Ieu7KaPRp2TZ7457Rjlx2QmxJRU3ak9w0A">                            
+                            </div>
+                            <div class="shop_element_right">
+                                <div class="shop_element_name">The Piano Guys 2 CD</div>
+                                <div class="shop_element_details">Limited shipping areas</div>
+                                <div class="shop_element_link_section">
+                                    Merchbar
+                                    <img src="icons/open_in_new.png" class="shop_icon">
+                                </div>
+                            </div>
+                            
+                        </a>
+                        <div id="shop_next">
+                            <img src="icons/navigate_next.png" id="shop_next_icon">
+                        </div>
+                    </div>
+                </div>
+                <div id="comments_no_section">
+                    <p id="comments_no">25,514 Comments</p>
+                    <div id="comments_no_right">
+                        <img src="icons/sort.png" id="sort_icon">
+                        Sort by
+                        <div id="sort_icon_tooltip">Sort comments</div>
+                    </div>
+                </div>
+                <div id="add_comment_section">
+                    <div id="add_comment_account">F</div>
+                    <div id="add_comment_div">                       
+                        <input type="text" placeholder="Add a comment..." id="add_comment" required>
+                        <img src="icons/smile.png" id="add_comment_smile">
+                        <button id="add_comment_cancel_button">Cancel</button>
+                        <button id="add_comment_comment_button">Comment</button>
+                    </div>                    
+                </div>
+                <div id="comments_section">
+                    <div class="comment_element">
+                        <img class="comment_channel_img" src="https://yt3.googleusercontent.com/e8iX3Qcv_hJO1Rd1l7-BnFcCgLeV7cfSMeD9SvKH7laemC0BrFWQRV8uhBynSUOfxIE9mSOnQaA=s176-c-k-c0x00ffffff-no-rj">
+                        <div class="comment_element_right">
+                            <div class="comment_pinned">
+                                <img src="icons/pinned.png" class="comment_pinned_icon">
+                                Pinned by The Piano Guys
+                            </div>
+                            <div class="comment_element_first_line">
+                                <div class="comment_channel_name" id="main_comment_channel_name">
+                                    @thepianoguys
+                                    <img src="icons/music_white.png" class="comment_channel_icon">
+                                    <div id="comment_channel_tooltip">@thepianoguys</div>
+                                </div>
+                                <div class="comment_date">8 months ago</div>
+                            </div>
+                            <div class="comment_content">
+                                If you love classical music as much as we do, check out Apple Music Classical here >> <a id="comment_link" target="_blank" href="https://apple.co/ThePianoGuys">https://apple.co/ThePianoGuys</a>. You can get 1 month for free if you are new to Apple Music!
+                            </div>
+                            <div class="comment_like_section">
+                                <img src="icons/like.png" class="comment_like_icon">
+                                <div class="comment_like_no">55</div>
+                                <img src="icons/dont-like.png" class="comment_dislike_icon">
+                                <div class="comment_reply">Reply</div>
+                            </div>
+                            <button class="comment_reply_section">
+                                <img src="icons/expand_blue.png" class="comment_reply_icon">
+                                4 replies
+                            </button>
+                            
+                        </div>
+                        <img src="icons/dots.png" class="comment_element_options">
+                    </div>
+                    <div class="comment_element">
+                        <div id="second_comment_element_channel_img">E</div>
+                        <div class="comment_element_right">
+                            <div class="comment_element_first_line">
+                                <div class="comment_channel_name">
+                                    @erichuang5785
+                                </div>
+                                <div class="comment_date">4 years ago</div>
+                            </div>
+                            <div class="comment_content">
+                                There's an old Chinese saying that it is hardest for a musician to meet someone who can understand his music.
+                                These two guys in the video are definitely understanding, savoring, and appreciating the music and soul of each other.
+                            </div>
+                            <div class="comment_like_section">
+                                <img src="icons/like.png" class="comment_like_icon">
+                                <div class="comment_like_no">141</div>
+                                <img src="icons/dont-like.png" class="comment_dislike_icon">
+                                <div class="comment_reply">Reply</div>
+                            </div>                            
+                        </div>
+                        <img src="icons/dots.png" class="comment_element_options">
+                    </div>
+                    <div class="comment_element">
+                        <img class="comment_channel_img" src="https://yt3.googleusercontent.com/pYVKSV_WmSKtBGWQmRPW6JN2pwOLANsnW1sFHuV_figvdLQ99H7GMZxnWUdKWfrldQJdErQmEg=s176-c-k-c0x00ffffff-no-rj">
+                        <div class="comment_element_right">
+                            <div class="comment_element_first_line">
+                                <div class="comment_channel_name">                                    
+                                    @Cjalmighty91
+                                </div>
+                                <div class="comment_date">1 year ago</div>
+                            </div>
+                            <div class="comment_content">
+                                It's so weird when you remember these videos just barely being uploaded that you look at the published date and you're like, "was it really that long ago?"  
+                                These songs still give me the same feeling of when they were so new.
+                            </div>
+                            <div class="comment_like_section">
+                                <img src="icons/like.png" class="comment_like_icon">
+                                <div class="comment_like_no">290</div>
+                                <img src="icons/dont-like.png" class="comment_dislike_icon">
+                                <div class="comment_reply">Reply</div>
+                            </div>
+                            <button class="comment_reply_section">
+                                <img src="icons/expand_blue.png" class="comment_reply_icon">
+                                8 replies
+                            </button>
+                            
+                        </div>
+                        <img src="icons/dots.png" class="comment_element_options">
+                    </div>
+                    <div class="comment_element">
+                        <img class="comment_channel_img" src="https://yt3.googleusercontent.com/ytc/AIdro_m4b6-YnbnY6sh9r17yRotk6fHvdDuXwkvbq2fS=s176-c-k-c0x00ffffff-no-rj">
+                        <div class="comment_element_right">
+                            <div class="comment_element_first_line">
+                                <div class="comment_channel_name">                                                                        
+                                    @CallaLily5278
+                                </div>
+                                <div class="comment_date">3 years ago</div>
+                            </div>
+                            <div class="comment_content">
+                                For the man/woman in all of y’all’s videos who carries the piano literally EVERYWHERE, 
+                                thank you dude/girl, you help a bunch in these videos
+                            </div>
+                            <div class="comment_like_section">
+                                <img src="icons/like.png" class="comment_like_icon">
+                                <div class="comment_like_no">21</div>
+                                <img src="icons/dont-like.png" class="comment_dislike_icon">
+                                <div class="comment_reply">Reply</div>
+                            </div>
+                            <button class="comment_reply_section">
+                                <img src="icons/expand_blue.png" class="comment_reply_icon">
+                                1 reply
+                            </button>
+                            
+                        </div>
+                        <img src="icons/dots.png" class="comment_element_options">
+                    </div>
+                    <div class="comment_element">
+                        <div id="fifth_comment_element_channel_img">J</div>
+                        <div class="comment_element_right">
+                            <div class="comment_element_first_line">
+                                <div class="comment_channel_name">                                                                                                            
+                                    @jpoc1494
+                                </div>
+                                <div class="comment_date">8 years ago</div>
+                            </div>
+                            <div class="comment_content">
+                                I was bullied as a child and would come home crying almost everyday. 
+                                My mother would look me in the eyes and tell me that my skin needs to be as hard as titanium. 
+                                Don't let anything pierce it. Twelve years later, on her deathbed that was the last thing she told me. 
+                                May she rest in peace knowing that I am titanium. You're my hero, mom.
+                            </div>
+                            <div class="comment_like_section">
+                                <img src="icons/like.png" class="comment_like_icon">
+                                <div class="comment_like_no">3K</div>
+                                <img src="icons/dont-like.png" class="comment_dislike_icon">
+                                <div class="comment_reply">Reply</div>
+                            </div>
+                            <button class="comment_reply_section">
+                                <img src="icons/expand_blue.png" class="comment_reply_icon">
+                                159 reply
+                            </button>
+                            
+                        </div>
+                        <img src="icons/dots.png" class="comment_element_options">
+                    </div>
+                    <div class="comment_element">
+                        <div id="sixth_comment_element_channel_img">L</div>
+                        <div class="comment_element_right">
+                            <div class="comment_element_first_line">
+                                <div class="comment_channel_name">                                                                                                            
+                                    @lindabredow8804
+                                </div>
+                                <div class="comment_date">1 year ago</div>
+                            </div>
+                            <div class="comment_content">
+                                This is the most beautiful version of this song that I have ever heard.
+                            </div>
+                            <div class="comment_like_section">
+                                <img src="icons/like.png" class="comment_like_icon">
+                                <div class="comment_like_no">25</div>
+                                <img src="icons/dont-like.png" class="comment_dislike_icon">
+                                <div class="comment_reply">Reply</div>
+                            </div>                            
+                        </div>
+                        <img src="icons/dots.png" class="comment_element_options">
+                    </div>
+                </div>
+            </div>
+            <div id="recommended_videos">
+                <div id="recommended_videos_header">
+                    <div id="recommended_videos_first_option">All</div>
+                    <div id="recommended_videos_second_option">From The Piano Guys</div>
+                    <div id="recommended_videos_third_option">The Piano Guys</div>
+                    <div id="recommended_videos_expand_icon_container">
+                        <img src="icons/expand_more.png" id="recommended_videos_expand_icon">
+                    </div>                    
+                </div>
+                <div id="recommended_videos_rest">
+                    <a href="https://www.youtube.com/watch?v=WZjFMj7OHTw" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/WZjFMj7OHTw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBzoD7V9La_OhvJNuX7Vfn4T4vevg">
+                            <div class="recommended_video_element_duration">4:02</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title">
+                                Adele - Hello / Lacrimosa (Mozart) – The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Adele - Hello / Lacrimosa (Mozart) – The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                28M views &nbsp; &#8226; 8 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a class="recommended_video_element" href="https://www.youtube.com/watch?v=6Dakd7EIgBE">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/6Dakd7EIgBE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAP8Ayo8s8qxZfrmpWfF9ZzWSu4-g">
+                            <div class="recommended_video_element_duration">4:21</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title">
+                                Let It Go (Disney's "Frozen") Vivaldi's Winter - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Let It Go (Disney's "Frozen") Vivaldi's Winter - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                118M views &nbsp; &#8226; 10 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=xeQnXe6DLtM" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" id="recommended_video_img_cover" src="https://i.ytimg.com/vi/xeQnXe6DLtM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=">
+                            <div class="recommended_video_element_duration">5:20</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title">
+                                "A Million Dreams" (Piano Solo) With A Surprise Ending - The Greatest Showman
+                                <div class="recommended_video_element_title_tooltip">
+                                    "A Million Dreams" (Piano Solo) With A Surprise Ending - The Greatest Showman
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                10M views &nbsp; &#8226; 5 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=IkBGhMUGtuA" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/IkBGhMUGtuA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLANkURZf2W-hF06YPB91hTngvDiww">
+                            <div class="recommended_video_element_duration">4:00</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title">
+                                Before You Go - Lewis Capaldi (Piano &amp; Cello Cover) The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Before You Go - Lewis Capaldi (Piano &amp; Cello Cover) The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                3.5M views &nbsp; &#8226; 2 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dfRtPbBFoGg" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/dfRtPbBFoGg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBJYsX6P2KM31nMflpPjKs-YDRurQ">
+                            <div class="recommended_video_element_duration">3:31</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title">
+                                David Guetta - Without You ft. Usher (Piano/Cello Cover) - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    David Guetta - Without You ft. Usher (Piano/Cello Cover) - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                54M views &nbsp; &#8226; 12 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=qMG1BXo8Asg" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/qMG1BXo8Asg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLA4f954g__9-Gdoz3OadVLKQ4blLg">
+                            <div class="recommended_video_element_duration">3:36</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title">
+                                Someone You Loved (Piano/Cello) The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Someone You Loved (Piano/Cello) The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                21M views &nbsp; &#8226; 4 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=DRVvFYppU0w" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/DRVvFYppU0w/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhoIGgoaDAP&amp;rs=AOn4CLBy_3ixUEOZ1lBCfWfL7A3UxoFjgw">
+                            <div class="recommended_video_element_duration">3:39</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Moonlight - Electric Cello (Inspired by Beethoven) - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Moonlight - Electric Cello (Inspired by Beethoven) - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                39M views &nbsp; &#8226; 12 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=QgaTQ5-XfMM" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/QgaTQ5-XfMM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCcrlQ9JkIW_GBBrq4q-qLIrpCLvg">
+                            <div class="recommended_video_element_duration">4:31</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Christina Perri - A Thousand Years (Piano/Cello Cover)
+                                <div class="recommended_video_element_title_tooltip">
+                                    Christina Perri - A Thousand Years (Piano/Cello Cover)
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                223M views &nbsp; &#8226; 11 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=NCaH-qqTWpk" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/NCaH-qqTWpk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLD7NozxHA0I0Xu97Yzgb7ct44p-cg">
+                            <div class="recommended_video_element_duration">4:16</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Kung Fu Piano: Cello Ascends - The Piano Guys (Wonder of The World 1 of 7)
+                                <div class="recommended_video_element_title_tooltip">
+                                    Kung Fu Piano: Cello Ascends - The Piano Guys (Wonder of The World 1 of 7)
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                27M views &nbsp; &#8226; 10 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=p0tBS_IAX-M" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/p0tBS_IAX-M/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBGKDg6bzQU94p8ZioXhhcWYGeVng">
+                            <div class="recommended_video_element_duration">3:53</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Arwen's Vigil, Original Tune - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Arwen's Vigil, Original Tune - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                11M views &nbsp; &#8226; 10 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Cgovv8jWETM" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/Cgovv8jWETM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAvM0grVXMO_zUarzg-1Th75uaf8A">
+                            <div class="recommended_video_element_duration">4:26</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Coldplay - Paradise (Peponi) African Style (ft. guest artist, Alex Boye) - ThePianoGuys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Coldplay - Paradise (Peponi) African Style (ft. guest artist, Alex Boye) - ThePianoGuys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                88M views &nbsp; &#8226; 12 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=yET4p-r2TI8" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/yET4p-r2TI8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCe9Chk6qRxSZVDzzjWzxzUzTXPjQ">
+                            <div class="recommended_video_element_duration">4:29</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Story of My Life (One Direction - Piano/Cello Cover) - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Story of My Life (One Direction - Piano/Cello Cover) - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                55M views &nbsp; &#8226; 9 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=mJ_fkw5j-t0" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/mJ_fkw5j-t0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAvjHiFTtSXISpHA50zg3JTdfBw6A">
+                            <div class="recommended_video_element_duration">5:08</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Beethoven's 5 Secrets - OneRepublic - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Beethoven's 5 Secrets - OneRepublic - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                148M views &nbsp; &#8226; 12 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=9fAZIQ-vpdw" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/9fAZIQ-vpdw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAFSuFum1Bgy_WO4uDHK_yfV61jzQ">
+                            <div class="recommended_video_element_duration">2:59</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                All of Me (Jon Schmidt original tune) - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    All of Me (Jon Schmidt original tune) - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                49M views &nbsp; &#8226; 12 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=5pBjopDymts" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/5pBjopDymts/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC431usXuebm1_UANQAKfztcV4gjQ">
+                            <div class="recommended_video_element_duration">3:58</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                It's Gonna Be OKAY - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    It's Gonna Be OKAY - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                11M views &nbsp; &#8226; 7 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=gosY-UrpHcA" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/gosY-UrpHcA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDhtIyjX_ECh01TwwOLuJl759DxSA">
+                            <div class="recommended_video_element_duration">2:59</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Nearer My God to Thee (for 9 cellos) - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Nearer My God to Thee (for 9 cellos) - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                27M views &nbsp; &#8226; 12 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=jzF_y039slk" class="recommended_video_element">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/jzF_y039slk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLA47nOTZ86t7HO11dqV8ezXNdjDvw">
+                            <div class="recommended_video_element_duration">3:53</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title"> 
+                                Over the Rainbow/Simple Gifts (Piano/Cello Cover) - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Over the Rainbow/Simple Gifts (Piano/Cello Cover) - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                58M views &nbsp; &#8226; 12 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                    <a class="recommended_video_element" href="https://www.youtube.com/watch?v=9p0BqUcQ7i0">
+                        <div class="recommended_video_element_img_container">
+                            <img class="recommended_video_element_img" src="https://i.ytimg.com/vi/9p0BqUcQ7i0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCKX8_xs15l9UTEsk2ZB3EyIEo1ow">
+                            <div class="recommended_video_element_duration">4:03</div>
+                            <div class="watch_later_container">
+                                <img src="icons/watch_later.png" class="watch_later_icon">
+                                <div class="watch_later_icon_tooltip">Watch later</div>
+                            </div>
+                            <div class="add_to_queue_container">
+                                <img src="icons/add_to_queue.png" class="add_to_queue_icon">
+                                <div class="add_to_queue_icon_tooltip">Add to queue</div>
+                            </div>
+                        </div>
+                        <div class="recommended_video_element_right">
+                            <div class="recommended_video_element_title">  
+                                Mission Impossible (Piano/Cello/Violin) ft. Lindsey Stirling - The Piano Guys
+                                <div class="recommended_video_element_title_tooltip">
+                                    Mission Impossible (Piano/Cello/Violin) ft. Lindsey Stirling - The Piano Guys
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_channel_name_icon">
+                                <div class="recommended_video_element_channel_name">
+                                    The Piano Guys                                
+                                    <div class="recommended_video_channel_name_tooltip">The Piano Guys</div>
+                                </div>
+                                <div class="recommended_video_element_channel_icon_container">
+                                    <img src="icons/music.png" class="recommended_video_element_channel_icon">
+                                    <div class="recommended_video_channel_music_icon_tooltip">Official Artist Channel</div>
+                                </div>
+                            </div>
+                            <div class="recommended_video_element_view_part">
+                                21M views &nbsp; &#8226; 11 years ago
+                            </div>
+                        </div>
+                        <img src="icons/dots.png" class="recommended_video_element_options">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
