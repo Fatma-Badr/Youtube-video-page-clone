@@ -38,22 +38,6 @@
     flex-direction: column;
     cursor: pointer;
 }
-#logo_contianer:hover #logo_tooltip{
-    opacity: 1;
-}
-#logo_tooltip{
-    position: absolute;
-    bottom: -27px;
-    right:-77px;
-    white-space: nowrap;
-    font-size: 12px;
-    border: 1px solid black;
-    padding: 4px;
-    opacity: 0;
-    transition: opacity 0.15s;
-    pointer-events: none;
-    background-color: white;
-}
 #logo{
     width: 100px;
     margin-left: 20px;
